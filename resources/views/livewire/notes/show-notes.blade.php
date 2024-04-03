@@ -35,8 +35,10 @@ new class extends Component {
     }
 }; ?>
 
-<div>
-    <div class="space-y-2">
+<div class="p-4 md:p-8"> <!-- Added padding for better spacing on small screens -->
+
+    <div class="space-y-4 md:space-y-6"> <!-- Adjusted vertical spacing -->
+
         @if ($notes->isEmpty())
             <div class="text-center">
                 <p class="text-xl font-bold">No notes yet</p>
@@ -45,32 +47,30 @@ new class extends Component {
                     note</x-button>
             </div>
         @else
-            <x-button class="mb-12" primary icon-right="plus" href="{{ route('notes.create') }}" wire:navigate>Create
+            <x-button class="mb-6 md:mb-12" primary icon-right="plus" href="{{ route('notes.create') }}" wire:navigate>Create
                 note</x-button>
-            <div class="grid grid-cols-3 gap-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"> <!-- Adjusted grid for better display on tablets -->
                 @foreach ($notes as $note)
-                    <x-card wire:key='{{ $note->id }}'>
-                        <div class="flex justify-between">
-                            <div>
+                    <x-card wire:key="{{ $note->id }}">
+                        <div class="flex flex-col justify-between h-full"> <!-- Adjusted flex layout for better display -->
+                            <div class="mb-2">
                                 @can('update', $note)
                                     <a href="{{ route('notes.edit', $note) }}" wire:navigate
                                        class="text-xl font-bold hover:underline hover:text-blue-500">{{ $note->title }}</a>
                                 @else
                                     <p class="text-xl font-bold text-gray-500">{{ $note->title }}</p>
                                 @endcan
-                                <p class="mt-2 text-xs">{{ Str::limit($note->body, 50) }}</p>
+                                <p class="mt-2 text-sm md:text-base">{{ Str::limit($note->body, 50) }}</p>
                             </div>
                             <div class="text-xs text-gray-500">
                                 {{ \Carbon\Carbon::parse($note->send_date)->format('d-M-Y') }}
                             </div>
-                        </div>
-                        <div class="flex items-end justify-between mt-4 space-x-1">
-                            <p class="text-xs">Recipient: <span class="font-semibold">{{ $note->recipient }}</span></p>
-                            <div>
-                                <x-button.circle icon="eye"
-                                                 href="{{ route('notes.view', $note) }}"></x-button.circle>
-                                <x-button.circle icon="trash"
-                                                 wire:click="delete('{{ $note->id }}')"></x-button.circle>
+                            <div class="flex items-end justify-between mt-2 md:mt-4"> <!-- Adjusted vertical spacing -->
+                                <p class="text-xs">Recipient: <span class="font-semibold">{{ $note->recipient }}</span></p>
+                                <div class="flex space-x-1">
+                                    <x-button.circle icon="eye" href="{{ route('notes.view', $note) }}"></x-button.circle>
+                                    <x-button.circle icon="trash" wire:click="delete('{{ $note->id }}')"></x-button.circle>
+                                </div>
                             </div>
                         </div>
                     </x-card>
@@ -79,3 +79,4 @@ new class extends Component {
         @endif
     </div>
 </div>
+
