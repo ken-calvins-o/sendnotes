@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4d9e8a493a0781d815852b7c68ca12be",
+    "content-hash": "12557dceeb29b87b97fdec11b7ee0574",
     "packages": [
         {
             "name": "brick/math",
@@ -5920,31 +5920,30 @@
         },
         {
             "name": "wireui/wireui",
-            "version": "v1.18.9",
+            "version": "v1.19.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wireui/wireui.git",
-                "reference": "cf49242fa46fdebdb6bf05d50d0cd575b16aaf31"
+                "reference": "d50d5e8d5f8d8d610701f6f638accb8d21398bbb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wireui/wireui/zipball/cf49242fa46fdebdb6bf05d50d0cd575b16aaf31",
-                "reference": "cf49242fa46fdebdb6bf05d50d0cd575b16aaf31",
+                "url": "https://api.github.com/repos/wireui/wireui/zipball/d50d5e8d5f8d8d610701f6f638accb8d21398bbb",
+                "reference": "d50d5e8d5f8d8d610701f6f638accb8d21398bbb",
                 "shasum": ""
             },
             "require": {
-                "laravel/framework": "10.*",
+                "laravel/framework": "^10.0|^11.0",
                 "livewire/livewire": "^3.0",
-                "php": "^8.1"
+                "php": "^8.1|^8.2|^8.3"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3.9",
                 "mockery/mockery": "^1.5",
-                "orchestra/testbench": "^8.0",
-                "orchestra/testbench-dusk": "^8.0",
-                "pestphp/pest": "^1.21",
-                "pestphp/pest-plugin-mock": "^1.0",
-                "phpunit/phpunit": "^9.5",
+                "orchestra/testbench": "^8.0|^9.0",
+                "orchestra/testbench-dusk": "^8.0|^9.0",
+                "pestphp/pest": "^2.0",
+                "pestphp/pest-plugin-mock": "^2.0",
                 "psy/psysh": "@stable"
             },
             "type": "library",
@@ -5981,7 +5980,7 @@
             ],
             "support": {
                 "issues": "https://github.com/wireui/wireui/issues",
-                "source": "https://github.com/wireui/wireui/tree/v1.18.9"
+                "source": "https://github.com/wireui/wireui/tree/v1.19.0"
             },
             "funding": [
                 {
@@ -5989,7 +5988,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-10-25T05:18:54+00:00"
+            "time": "2024-03-13T13:34:59+00:00"
         }
     ],
     "packages-dev": [
