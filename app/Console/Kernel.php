@@ -12,16 +12,17 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule): void
     {
-        // $schedule->command('inspire')->hourly();
-    }
+        $schedule->command('app:send-scheduled-notes')->timezone('Nairobi/Africa')->dailyAt('08:00');
 
+    }
     /**
-     * Register the commands for the application.
-     */
-    protected function commands(): void
+         * Register the commands for the application.
+         */
+
+        protected function commands(): void
     {
         $this->load(__DIR__.'/Commands');
 
         require base_path('routes/console.php');
     }
-}
+    }
