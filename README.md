@@ -2,6 +2,7 @@
 ## About The Send Notes Laravel App
 
 A Laravel app that allows you to send scheduled notes to your friend:
+This snippet displays the list of notes created
 
 ![image](https://github.com/ken-calvins-o/sendnotes/assets/149637571/6dda41b4-ee54-4afe-93aa-81ff7937dd1c)
 
@@ -9,6 +10,10 @@ A Laravel app that allows you to send scheduled notes to your friend:
 ## Tech Stack
 
 TALL Stack.
+This snippet shows the create notes page:
+
+![image](https://github.com/ken-calvins-o/sendnotes/assets/149637571/d527983b-ac24-4a90-951c-8f10d228457c)
+
 
 You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
