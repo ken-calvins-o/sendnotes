@@ -36,6 +36,7 @@ Important features to note:
 
 ## Scope covered 
 This snippet shows the fly.io hosting dashboard:
+
 ![WhatsApp Image 2024-04-14 at 16 06 31](https://github.com/ken-calvins-o/sendnotes/assets/149637571/bf1f6f08-8bd4-4a65-bed9-934bc3f0b5c1)
 
     - Laravel Breeze
