@@ -28,43 +28,22 @@ What exactly does the app do?
 
 ![image](https://github.com/ken-calvins-o/sendnotes/assets/149637571/79d7fd34-bc15-4fd7-863e-3203f8c67574)
 
+Important features to note:
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+    - A user can only view the notes they created and only notes that are sent to them.
+    - Notes should only be public once sent.
+    - For notes to be as secure as possible; I have implemented the use of UUIDs instead of the traditional auto-incrementing numeric IDs.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Scope covered 
+This snippet shows the fly.io hosting dashboard:
+![WhatsApp Image 2024-04-14 at 16 06 31](https://github.com/ken-calvins-o/sendnotes/assets/149637571/bf1f6f08-8bd4-4a65-bed9-934bc3f0b5c1)
 
-## Laravel Sponsors
+    - Laravel Breeze
+    - CI/CD (Using Fly.io)
+    - SQLite DB
+    - Laravel Livewire Volt: Single Page Application implementation
+    - Models and migrations
+    - Emails
+    - Jobs, Queues and Cron (To send emails via background job)
+    - Routing 
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
