@@ -9,10 +9,14 @@ This snippet displays the list of notes created
 
 ## Tech Stack
 
-TALL Stack.
+    - Tailwind CSS.
+    - Alpine.js.
+    - Laravel.
+    - Livewire.
 This snippet shows the create notes page:
 
-![image](https://github.com/ken-calvins-o/sendnotes/assets/149637571/d527983b-ac24-4a90-951c-8f10d228457c)
+![image](https://github.com/ken-calvins-o/sendnotes/assets/149637571/15ceef48-21c6-431d-8888-7ceb15e22fe3)
+
 
 
 You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
