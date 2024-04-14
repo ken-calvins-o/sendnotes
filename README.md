@@ -18,6 +18,16 @@ This snippet shows the create notes page:
 ![image](https://github.com/ken-calvins-o/sendnotes/assets/149637571/15ceef48-21c6-431d-8888-7ceb15e22fe3)
 
 
+## Application Structure
+What exactly does the app do?
+
+    - Authenticate users using Laravel Breeze
+    - Users can type up notes and send them.
+    - Notes will be sent publicly via email to view. (I used postmark to achieve this)
+    - The receiver can like/heart a note that's sent.
+
+![image](https://github.com/ken-calvins-o/sendnotes/assets/149637571/79d7fd34-bc15-4fd7-863e-3203f8c67574)
+
 
 You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
